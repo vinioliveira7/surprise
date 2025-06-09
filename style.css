@@ -1,0 +1,172 @@
+/* Importa as fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;700&display=swap');
+
+/* Variáveis de Cor para facilitar a customização */
+:root {
+    --primary-color: #d92662; /* Rosa escuro / Vermelho */
+    --secondary-color: #fce8ed; /* Rosa bem clarinho */
+    --text-color: #333;
+    --light-text-color: #666;
+    --font-serif: 'Great Vibes', cursive;
+    --font-sans: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font-sans);
+    color: var(--text-color);
+    background-color: #fff;
+}
+
+/* Estilo da Seção Principal (Hero) */
+.hero-section {
+    background-color: var(--secondary-color);
+    padding: 60px 20px;
+}
+
+.hero-title {
+    font-family: var(--font-serif);
+    font-size: 4rem; /* 64px */
+    color: var(--primary-color);
+    font-weight: normal;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.8rem; /* 45px */
+    }
+}
+
+/* Estilo do Título da Categoria dentro do Slide */
+.slide-category-title {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Card de Memória */
+.memory-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.memory-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.memory-card .card-body {
+    padding: 15px;
+}
+
+.memory-card h5 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.memory-card .memory-date {
+    font-size: 0.9rem;
+    color: var(--light-text-color);
+    font-style: italic;
+}
+
+/* Customização dos Controles do Carrossel (Setas) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-size: 50%;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: var(--primary-color);
+}
+
+/* Seção de Mensagem */
+#message-section {
+    background-color: var(--secondary-color);
+}
+
+#message-section h3 {
+    font-family: var(--font-serif);
+    color: var(--primary-color);
+    font-size: 2.8rem;
+}
+
+.message-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #444;
+}
+
+/* Rodapé */
+footer {
+    background-color: #f8f9fa;
+    color: var(--light-text-color);
+    padding: 20px 0;
+}
+
+/* =============== ESTILOS PARA O CONTADOR =============== */
+.counter-container {
+    margin-top: 40px;
+}
+
+.counter-title {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--light-text-color);
+    margin-bottom: 20px;
+}
+
+#time-counter {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaçamento entre as caixas */
+    text-align: center;
+}
+
+.time-box {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px 20px;
+    border-radius: 8px;
+    min-width: 90px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+#time-counter span {
+    display: block;
+    font-size: 2.5rem; /* Tamanho dos números */
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1;
+}
+
+#time-counter p {
+    margin: 0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--light-text-color);
+    letter-spacing: 1px;
+}
+
+/* Ajustes para telas menores (celulares) */
+@media (max-width: 768px) {
+    #time-counter {
+        gap: 10px;
+    }
+    .time-box {
+        padding: 10px;
+        min-width: 70px;
+    }
+    #time-counter span {
+        font-size: 2rem;
+    }
+}
+/* ======================================================= */

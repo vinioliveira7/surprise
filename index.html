@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para o Amor da Minha Vida</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero-section text-center">
+        <div class="container">
+        <h1 class="hero-title">Nossa História, Nossos Momentos</h1>
+        <p class="lead">Uma pequena homenagem para a pessoa que torna cada dia especial: Você, <strong>Bellinha</strong>.</p>
+
+        <div class="counter-container">
+            <h4 class="counter-title">Estamos juntos há:</h4>
+            <div id="time-counter">
+                <div class="time-box">
+                    <span id="days">0</span>
+                    <p>Dias</p>
+                </div>
+                <div class="time-box">
+                    <span id="hours">0</span>
+                    <p>Horas</p>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">0</span>
+                    <p>Minutos</p>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">0</span>
+                    <p>Segundos</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="text-center mb-5">
+            <h2>Revivendo Nossos Melhores Momentos</h2>
+            <p class="text-muted">Deslize para viajar pelas nossas memórias favoritas.</p>
+        </div>
+
+        <div id="memoriesCarousel" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#memoriesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#memoriesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#memoriesCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h4 class="text-center slide-category-title mb-4">No dia que começou</h4>
+                    <div class="row justify-content-center">
+                        <div class="col-6 col-md-4 mb-4">
+                            <div class="memory-card">
+                                <img src="imagens/foto1.jpg" class="img-fluid" alt="Descrição da foto">
+                                <div class="card-body">
+                                    <h5>Antes de passar a noite com fome</h5>
+                                    <p class="memory-date">junho de 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 mb-4">
+                            <div class="memory-card">
+                                <img src="imagens/foto2.jpg" class="img-fluid" alt="Descrição da foto">
+                                <div class="card-body">
+                                    <h5>Passando a noite com fome</h5>
+                                    <p class="memory-date">Junho de 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 mb-4 d-none d-md-block">
+                            <div class="memory-card">
+                                <img src="imagens/foto3.jpg" class="img-fluid" alt="Descrição da foto">
+                                <div class="card-body">
+                                    <h5>Presente</h5>
+                                    <p class="memory-date">Junho de 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <h4 class="text-center slide-category-title mb-4">Momentos Simples e Perfeitos</h4>
+                    <div class="row justify-content-center">
+                        <div class="col-6 col-md-4 mb-4">
+                            <div class="memory-card">
+                                <img src="imagens/foto4.jpg" class="img-fluid" alt="Descrição da foto">
+                                <div class="card-body">
+                                    <h5>Final de tarde na praia</h5>
+                                    <p class="memory-date">Julho de 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 mb-4">
+                             <div class="memory-card">
+                                <img src="imagens/foto5.jpg" class="img-fluid" alt="Descrição da foto">
+                                <div class="card-body">
+                                    <h5>Trabalho juntos</h5>
+                                    <p class="memory-date">Novembro de 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 mb-4 d-none d-md-block">
+                             <div class="memory-card">
+                                <img src="imagens/foto6.jpg" class="img-fluid" alt="Descrição da foto">
+                                <div class="card-body">
+                                    <h5>Voltinha no final da noite</h5>
+                                    <p class="memory-date">Dezembro de 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <h4 class="text-center slide-category-title mb-4">Mais de alguns momentos importantes</h4>
+                    <div class="row justify-content-center">
+                        <div class="col-6 col-md-4 mb-4">
+                            <div class="memory-card">
+                                <img src="imagens/foto7.jpg" class="img-fluid" alt="Descrição da foto">
+                                <div class="card-body">
+                                    <h5>Asterisco</h5>
+                                    <p class="memory-date">Junho de 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 mb-4">
+                             <div class="memory-card">
+                                <img src="imagens/foto8.jpg" class="img-fluid" alt="Descrição da foto">
+                                <div class="card-body">
+                                    <h5>Viagem para praia</h5>
+                                    <p class="memory-date">Julho de 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 mb-4 d-none d-md-block">
+                             <div class="memory-card">
+                                <img src="imagens/foto9.jpg" class="img-fluid" alt="Descrição da foto">
+                                <div class="card-body">
+                                    <h5>Viagem para praia</h5>
+                                    <p class="memory-date">Julho de 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 mb-4 d-none d-md-block">
+                             <div class="memory-card">
+                                <img src="imagens/foto10.jpg" class="img-fluid" alt="Descrição da foto">
+                                <div class="card-body">
+                                    <h5>Viagem para praia</h5>
+                                    <p class="memory-date">Julho de 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 mb-4 d-none d-md-block">
+                             <div class="memory-card">
+                                <img src="imagens/foto11.jpg" class="img-fluid" alt="Descrição da foto">
+                                <div class="card-body">
+                                    <h5>Festa perto aqui de casa</h5>
+                                    <p class="memory-date">Agosto de 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 mb-4 d-none d-md-block">
+                             <div class="memory-card">
+                                <img src="imagens/foto12.jpg" class="img-fluid" alt="Descrição da foto">
+                                <div class="card-body">
+                                    <h5>Final de ano</h5>
+                                    <p class="memory-date">Janeiro de 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#memoriesCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#memoriesCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </main>
+    
+    <section id="message-section" class="text-center py-5">
+        <div class="container">
+            <h3 class="mb-4">Uma Mensagem Para Você</h3>
+            <blockquote class="blockquote">
+                <p class="message-text">"Meu amor, cada foto nesta página é um pequeno fragmento da imensa felicidade que você trouxe para a minha vida. Olhar para elas me faz reviver cada sorriso, cada abraço e cada aventura que compartilhamos. Que nossa história continue sendo escrita com muitos outros capítulos tão lindos quanto esses. Eu te amo mais do que as palavras podem expressar."</p>
+            </blockquote>
+        </div>
+    </section>
+
+    <footer class="text-center py-4">
+        <p>Feito com todo o carinho do mundo por <strong>Vinii7x</strong>.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Define a data de início do relacionamento
+        const startDate = new Date('2024-06-12T00:00:00');
+
+        // Seleciona os elementos do HTML onde os números aparecerão
+        const daysEl = document.getElementById('days');
+        const hoursEl = document.getElementById('hours');
+        const minutesEl = document.getElementById('minutes');
+        const secondsEl = document.getElementById('seconds');
+
+        // Função para adicionar um zero à esquerda se o número for menor que 10 (ex: 9 -> 09)
+        function formatTime(time) {
+            return time < 10 ? `0${time}` : time;
+        }
+
+        // Função principal que atualiza o contador
+        function updateCounter() {
+            const now = new Date(); // Pega a data e hora atuais
+            const diff = now - startDate; // Calcula a diferença em milissegundos
+
+            // Converte a diferença de milissegundos para dias, horas, minutos e segundos
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            // Atualiza os números na página com os valores calculados
+            daysEl.innerHTML = days;
+            hoursEl.innerHTML = formatTime(hours);
+            minutesEl.innerHTML = formatTime(minutes);
+            secondsEl.innerHTML = formatTime(seconds);
+        }
+
+        // Chama a função 'updateCounter' a cada 1000 milissegundos (1 segundo)
+        setInterval(updateCounter, 1000);
+
+        // Chama a função uma vez no início para não esperar 1 segundo para o contador aparecer
+        updateCounter();
+    </script>
+</body>
+</html>
