@@ -113,9 +113,9 @@ footer {
     padding: 20px 0;
 }
 
-/* =============== ESTILOS PARA O CONTADOR =============== */
 .counter-container {
     margin-top: 40px;
+    padding: 0 10px; /* Adiciona um respiro nas laterais em telas pequenas */
 }
 
 .counter-title {
@@ -128,21 +128,24 @@ footer {
 #time-counter {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Espaçamento entre as caixas */
+    gap: 15px; /* Espaçamento padrão entre as caixas */
     text-align: center;
+    flex-wrap: nowrap; /* Por padrão, não quebra a linha */
+    transition: all 0.3s ease; /* Animação suave na transição */
 }
 
 .time-box {
     background-color: rgba(255, 255, 255, 0.7);
-    padding: 15px 20px;
+    padding: 15px; /* Padding padrão */
     border-radius: 8px;
-    min-width: 90px;
+    flex-grow: 1; /* Permite que as caixas cresçam para preencher o espaço */
+    max-width: 110px; /* Define uma largura máxima para cada caixa */
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 #time-counter span {
     display: block;
-    font-size: 2.5rem; /* Tamanho dos números */
+    font-size: 2.5rem; /* Tamanho padrão dos números */
     font-weight: 700;
     color: var(--primary-color);
     line-height: 1;
@@ -156,17 +159,25 @@ footer {
     letter-spacing: 1px;
 }
 
-/* Ajustes para telas menores (celulares) */
-@media (max-width: 768px) {
+
+@media (max-width: 480px) {
     #time-counter {
-        gap: 10px;
+        /* Permite que os itens quebrem para a próxima linha */
+        flex-wrap: wrap; 
+        gap: 20px; /* Aumenta o espaço quando estão em grade */
     }
+
     .time-box {
+        /* * Define que cada caixa deve ocupar quase 50% da largura,
+         * menos um pequeno espaço para o 'gap' funcionar.
+         * Isso cria a grade 2x2.
+        */
+        flex-basis: calc(50% - 12px); 
         padding: 10px;
-        min-width: 70px;
+        flex-grow: 1; /* Garante que preencham o espaço */
     }
+
     #time-counter span {
-        font-size: 2rem;
+        font-size: 2rem; /* Diminui um pouco os números */
     }
 }
-/* ======================================================= */
